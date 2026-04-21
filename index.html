@@ -27,8 +27,6 @@ a{color:inherit;text-decoration:none}
 .container{max-width:1140px;margin:0 auto;padding:0 24px}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
 .reveal.visible{opacity:1;transform:none}
-
-/* Nav */
 .nav{position:fixed;top:0;left:0;right:0;z-index:999;padding:0 24px;transition:background .3s,box-shadow .3s;background:rgba(9,13,22,0.5)}
 .nav.scrolled{background:rgba(9,13,22,0.95);backdrop-filter:blur(16px);box-shadow:0 1px 0 var(--border)}
 .nav-inner{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px}
@@ -44,8 +42,6 @@ a{color:inherit;text-decoration:none}
 .nav-btn:hover{background:var(--blue);color:var(--bg);border-color:var(--blue)}
 .nav-btn.cv{color:var(--teal);border-color:rgba(45,212,191,.25)}
 .nav-btn.cv:hover{background:var(--teal);color:var(--bg);border-color:var(--teal)}
-
-/* Hero */
 .hero{min-height:100vh;display:flex;align-items:center;padding:100px 24px 60px;position:relative;overflow:hidden;background:var(--bg)}
 .hero-grid{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;width:100%}
 .hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(56,189,248,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(56,189,248,.03) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 60% 50% at 50% 50%,black 20%,transparent 100%)}
@@ -54,7 +50,7 @@ a{color:inherit;text-decoration:none}
 @keyframes blink{0%,100%{opacity:.4}50%{opacity:1}}
 .hero-h1{font-size:clamp(36px,5vw,54px);font-weight:800;line-height:1.08;letter-spacing:-2.5px;margin-bottom:20px;color:var(--text)}
 .hero-h1 .accent{background:linear-gradient(135deg,var(--blue),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero-sub{font-size:18px;color:var(--text2);font-weight:400;margin-bottom:12px;letter-spacing:-.2px}
+.hero-sub{font-size:18px;color:var(--text2);font-weight:400;margin-bottom:12px}
 .hero-p{font-size:15px;color:var(--text3);line-height:1.75;max-width:460px;margin-bottom:32px}
 .hero-btns{display:flex;gap:12px;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;gap:6px;padding:12px 28px;border-radius:8px;font-family:var(--font);font-size:14px;font-weight:600;cursor:pointer;border:none;transition:all .25s}
@@ -68,16 +64,12 @@ a{color:inherit;text-decoration:none}
 .trust-bar{display:flex;gap:24px;margin-top:28px;flex-wrap:wrap}
 .trust-item{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text3)}
 .trust-item .ck{color:var(--teal);font-size:14px;font-weight:700}
-
-/* Code card */
 .code-card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:0 16px 48px rgba(0,0,0,.35)}
 .code-bar{display:flex;align-items:center;gap:7px;padding:12px 16px;background:rgba(0,0,0,.3);border-bottom:1px solid var(--border)}
 .code-dot{width:9px;height:9px;border-radius:50%}
 .code-file{font-size:11px;color:var(--text3);margin-left:6px;font-family:var(--mono)}
 .code-body{padding:20px;font-family:var(--mono);font-size:12.5px;line-height:2.1;color:var(--text3);white-space:pre;overflow-x:auto;background:var(--bg2)}
 .code-body .kw{color:var(--blue)}.code-body .cls{color:var(--amber)}.code-body .str{color:var(--teal)}.code-body .num{color:var(--rose)}.code-body .cm{color:rgba(255,255,255,.18)}.code-body .prop{color:var(--violet)}
-
-/* Sections */
 section{padding:100px 24px}
 .sec-tag{font-family:var(--mono);font-size:12px;color:var(--blue);letter-spacing:1px;margin-bottom:10px;display:block}
 .sec-h2{font-size:clamp(28px,3.5vw,38px);font-weight:700;letter-spacing:-1.5px;margin-bottom:14px;color:var(--text)}
@@ -90,7 +82,7 @@ section{padding:100px 24px}
 .metric{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:22px;text-align:center;transition:border-color .25s,transform .25s}
 .metric:hover{border-color:var(--border2);transform:translateY(-3px)}
 .metric-val{font-size:32px;font-weight:800;background:linear-gradient(135deg,var(--blue),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.metric-lbl{font-size:12px;color:var(--text3);margin-top:2px;letter-spacing:.3px}
+.metric-lbl{font-size:12px;color:var(--text3);margin-top:2px}
 #skills{background:var(--bg)}
 .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .sk-card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:24px;transition:all .25s}
@@ -98,18 +90,18 @@ section{padding:100px 24px}
 .sk-title{font-size:13px;font-family:var(--mono);color:var(--blue);margin-bottom:14px;font-weight:500;display:flex;align-items:center;gap:6px}
 .sk-title::before{content:'';width:3px;height:14px;border-radius:2px;background:var(--blue)}
 .sk-list{display:flex;flex-wrap:wrap;gap:7px}
-.sk-chip{padding:5px 13px;border-radius:6px;font-size:12px;color:var(--text2);background:rgba(56,189,248,.04);border:1px solid rgba(56,189,248,.06);font-weight:400;transition:all .2s}
+.sk-chip{padding:5px 13px;border-radius:6px;font-size:12px;color:var(--text2);background:rgba(56,189,248,.04);border:1px solid rgba(56,189,248,.06);transition:all .2s}
 .sk-chip:hover{color:var(--blue);border-color:rgba(56,189,248,.2);background:rgba(56,189,248,.08)}
 #projects{background:var(--bg2)}
 .proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.proj{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:28px;transition:all .3s;position:relative;overflow:hidden}
+.proj{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:28px;transition:all .3s}
 .proj:hover{border-color:var(--border2);transform:translateY(-5px);box-shadow:0 12px 40px rgba(0,0,0,.25)}
 .proj.main{grid-column:span 2;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
 .proj-label{display:inline-block;padding:3px 10px;border-radius:4px;font-size:10px;font-family:var(--mono);font-weight:500;letter-spacing:.5px;margin-bottom:14px}
 .proj-label.live{background:rgba(45,212,191,.1);color:var(--teal);border:1px solid rgba(45,212,191,.15)}
 .proj-label.edu{background:rgba(167,139,250,.08);color:var(--violet);border:1px solid rgba(167,139,250,.12)}
 .proj-label.app{background:rgba(251,113,133,.08);color:var(--rose);border:1px solid rgba(251,113,133,.12)}
-.proj-name{font-size:20px;font-weight:700;margin-bottom:8px;letter-spacing:-.3px;color:var(--text)}
+.proj-name{font-size:20px;font-weight:700;margin-bottom:8px;color:var(--text)}
 .proj-desc{font-size:13.5px;color:var(--text3);line-height:1.7;margin-bottom:18px}
 .proj-stack{display:flex;flex-wrap:wrap;gap:6px}
 .proj-stack span{font-size:10.5px;padding:3px 9px;border-radius:5px;background:var(--card);color:var(--text3);font-family:var(--mono);border:1px solid rgba(255,255,255,.03)}
@@ -122,7 +114,7 @@ section{padding:100px 24px}
 .exp-item:last-child{border-left-color:transparent;padding-bottom:0}
 .exp-item::before{content:'';position:absolute;left:-7px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2.5px solid var(--blue)}
 .exp-date{font-family:var(--mono);font-size:12px;color:var(--blue);margin-bottom:4px}
-.exp-role{font-size:19px;font-weight:700;letter-spacing:-.3px;margin-bottom:3px;color:var(--text)}
+.exp-role{font-size:19px;font-weight:700;margin-bottom:3px;color:var(--text)}
 .exp-co{font-size:14px;color:var(--text2);margin-bottom:10px}
 .exp-desc{font-size:13.5px;color:var(--text3);line-height:1.75;max-width:540px}
 #education{background:var(--bg2)}
@@ -130,7 +122,7 @@ section{padding:100px 24px}
 .edu-deg{font-size:20px;font-weight:700;margin-bottom:4px;color:var(--text)}
 .edu-school{font-size:15px;color:var(--blue);margin-bottom:4px;font-weight:500}
 .edu-when{font-size:13px;color:var(--text3);font-family:var(--mono);margin-bottom:10px}
-.edu-info{font-size:13.5px;color:var(--text3);line-height:1.7}
+.edu-info{font-size:13.5px;color:var(--text3)}
 .edu-badge{display:inline-block;margin-top:12px;padding:5px 14px;border-radius:6px;font-size:12px;font-weight:500;background:rgba(56,189,248,.08);color:var(--blue);border:1px solid rgba(56,189,248,.1)}
 #contact{background:var(--bg)}
 .contact-cards{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
@@ -145,21 +137,24 @@ section{padding:100px 24px}
 .cc-name{font-size:13px;font-weight:600;margin-bottom:3px;color:var(--text)}
 .cc-val{font-size:11px;color:var(--text3);word-break:break-all}
 .footer{text-align:center;padding:36px 24px;border-top:1px solid var(--border);background:var(--bg)}
-.footer p{font-size:12px;color:var(--text3)}
-.footer span{color:var(--blue)}
+.footer p{font-size:12px;color:var(--text3)}.footer span{color:var(--blue)}
 @media(max-width:900px){.hero-grid,.about-wrap,.proj.main{grid-template-columns:1fr}.code-card{display:none}.skills-grid{grid-template-columns:1fr 1fr}.proj-grid{grid-template-columns:1fr}.proj.main{grid-column:span 1}.contact-cards{grid-template-columns:1fr 1fr}.nav-menu{display:none}.trust-bar{gap:16px}}
 @media(max-width:600px){.hero{padding:90px 16px 40px}section{padding:64px 16px}.skills-grid{grid-template-columns:1fr}.contact-cards{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<nav class="nav" id="nav"><div class="nav-inner"><a href="#" class="nav-brand">MR<i>.dev</i></a><div class="nav-menu"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div><div class="nav-btns"><a href="mailto:mahmoud.reda1360@gmail.com" class="nav-btn">Let's Talk</a><a href="Mahmoud_Reda_CV.pdf" download class="nav-btn cv">Resume</a></div></div></nav>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="#" class="nav-brand">MR<i>.dev</i></a><div class="nav-menu"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div><div class="nav-btns"><a href="mailto:mahmoud.reda1360@gmail.com" class="nav-btn">Let's Talk</a><a href="Mahmoud%20Reda%20CV%20.pdf" download class="nav-btn cv">Resume</a></div></div></nav>
 
 <section class="hero" id="hero"><div class="hero-grid"><div>
 <div class="hero-tag"><span class="pulse"></span>Available for remote work</div>
 <h1 class="hero-h1">Mahmoud Reda<br><span class="accent">Mohamed</span></h1>
 <p class="hero-sub">Flutter Developer &amp; Mobile Software Engineer</p>
 <p class="hero-p">I don't build side projects — I build real products that businesses depend on every day. Creator of TableMaster, a production POS system powering cafe and restaurant operations with 8+ modules, 5 platforms, and zero-downtime offline-first architecture.</p>
-<div class="hero-btns"><a href="#projects" class="btn btn-fill">View Work</a><a href="#contact" class="btn btn-ghost">Contact Me</a><a href="Mahmoud_Reda_CV.pdf" download class="btn btn-cv"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download CV</a></div>
+<div class="hero-btns">
+<a href="#projects" class="btn btn-fill">View Work</a>
+<a href="#contact" class="btn btn-ghost">Contact Me</a>
+<a href="Mahmoud%20Reda%20CV%20.pdf" download class="btn btn-cv"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download CV</a>
+</div>
 <div class="trust-bar"><div class="trust-item"><span class="ck">&#10003;</span>ATS Score: 88/100</div><div class="trust-item"><span class="ck">&#10003;</span>Available Immediately</div><div class="trust-item"><span class="ck">&#10003;</span>Remote Worldwide</div></div>
 </div><div class="code-card reveal"><div class="code-bar"><div class="code-dot" style="background:#ff5f57"></div><div class="code-dot" style="background:#febc2e"></div><div class="code-dot" style="background:#28c840"></div><span class="code-file">table_master.dart</span></div><div class="code-body"><span class="cm">/// Production POS App</span>
 <span class="kw">class</span> <span class="cls">TableMaster</span> <span class="kw">extends</span> <span class="cls">StatelessWidget</span> {
@@ -185,7 +180,7 @@ section{padding:100px 24px}
 
 <section id="education"><div class="container"><span class="sec-tag reveal">05 — education</span><h2 class="sec-h2 reveal">Background</h2><div class="edu-box reveal" style="margin-top:32px"><div class="edu-deg">B.Sc. Computer Science — Software Engineering</div><div class="edu-school">King Salman International University</div><div class="edu-when">Sep 2021 — Jun 2025 &middot; El-Tur, Sinai</div><div class="edu-info">CGPA: 2.914 / 4.0 &middot; Very Good &middot; Graduation Project: Excellent</div><span class="edu-badge">4th Place — ICPC ECPC 2023</span></div></div></section>
 
-<section id="contact"><div class="container"><span class="sec-tag reveal">06 — contact</span><h2 class="sec-h2 reveal">Let's build something great</h2><p class="sec-p reveal">I'm ready to bring 4+ years of shipping real products to your team. Available immediately for remote roles worldwide.</p><div class="contact-cards"><a href="mailto:mahmoud.reda1360@gmail.com" class="cc reveal"><div class="cc-icon mail">&#9993;</div><div class="cc-name">Email</div><div class="cc-val">mahmoud.reda1360@gmail.com</div></a><a href="tel:+201001220206" class="cc reveal"><div class="cc-icon phone">&#9742;</div><div class="cc-name">Phone</div><div class="cc-val">+20 100 122 0206</div></a><a href="https://github.com/Mahmoudreda136" target="_blank" class="cc reveal"><div class="cc-icon gh">&lt;/&gt;</div><div class="cc-name">GitHub</div><div class="cc-val">Mahmoudreda136</div></a><a href="https://www.linkedin.com/in/mahmoud-reda-a45268312/" target="_blank" class="cc reveal"><div class="cc-icon li">in</div><div class="cc-name">LinkedIn</div><div class="cc-val">mahmoud-reda</div></a><a href="Mahmoud_Reda_CV.pdf" download class="cc reveal"><div class="cc-icon dl">&darr;</div><div class="cc-name">Download CV</div><div class="cc-val">PDF &middot; ATS-Ready</div></a></div></div></section>
+<section id="contact"><div class="container"><span class="sec-tag reveal">06 — contact</span><h2 class="sec-h2 reveal">Let's build something great</h2><p class="sec-p reveal">I'm ready to bring 4+ years of shipping real products to your team. Available immediately for remote roles worldwide.</p><div class="contact-cards"><a href="mailto:mahmoud.reda1360@gmail.com" class="cc reveal"><div class="cc-icon mail">&#9993;</div><div class="cc-name">Email</div><div class="cc-val">mahmoud.reda1360@gmail.com</div></a><a href="tel:+201001220206" class="cc reveal"><div class="cc-icon phone">&#9742;</div><div class="cc-name">Phone</div><div class="cc-val">+20 100 122 0206</div></a><a href="https://github.com/Mahmoudreda136" target="_blank" class="cc reveal"><div class="cc-icon gh">&lt;/&gt;</div><div class="cc-name">GitHub</div><div class="cc-val">Mahmoudreda136</div></a><a href="https://www.linkedin.com/in/mahmoud-reda-a45268312/" target="_blank" class="cc reveal"><div class="cc-icon li">in</div><div class="cc-name">LinkedIn</div><div class="cc-val">mahmoud-reda</div></a><a href="Mahmoud%20Reda%20CV%20.pdf" download class="cc reveal"><div class="cc-icon dl">&darr;</div><div class="cc-name">Download CV</div><div class="cc-val">PDF &middot; ATS-Ready</div></a></div></div></section>
 
 <footer class="footer"><p>Mahmoud Reda Mohamed &copy; 2026 — Built with <span>Flutter</span> mindset</p></footer>
 <script>
